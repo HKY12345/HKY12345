@@ -1,4 +1,16 @@
-h1{
-    color: brown;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+.bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .bg-1 { 
+    background-color: #72cd54; /* Green */
+    color: #ffffff;
+  }
+  .container-fluid1 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
