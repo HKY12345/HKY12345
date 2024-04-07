@@ -5,6 +5,7 @@
   .container-fluid4 {
     padding-top: 50px;
     padding-bottom: 50px;
+  
   }
   .bg-1 { 
     background-color: #72cd54; /* Green */
@@ -13,4 +14,10 @@
   .container-fluid1 {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+  h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  body{
+    background-color:burlywood;
   }
