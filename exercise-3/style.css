@@ -1,0 +1,37 @@
+.msg h1 {
+  margin: 0 0 0.2em 0;
+}
+
+.msg {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: orange;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1.25rem;
+  margin: 1em 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.msg-info {
+  background: green;
+}
+.msg-info:hover {
+  background: grey;
+}
+
+.msg-warning {
+  background-color: yellow;
+  color: black;
+}
+.msg-warning-hover {
+  background: yellow;
+}
+
+.msg-danger {
+  background-color: red;
+  color: black;
+}
+.msg-danger-hover {
+  background: red;
+}/*# sourceMappingURL=style.css.map */
