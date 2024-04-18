@@ -39,7 +39,10 @@
     </section>
 
     <section id="scroll-activated-image">
-        
+      <h2>Section 3: Scroll-Activated Image Movement</h2>
+      <!-- Add your scroll-activated image here -->
+      <img id='scrolling-image' src="media/Firefly cute cat running in the summer meadow with yellow flowers 14331.jpg" alt="scroll-activated-image Image">
+  </section> 
     <!-- Section4  -->
     <div class="container">
     <section id="choose-your-own-adventure">
@@ -82,6 +85,12 @@
     document.getElementById("result").classList.remove("correct");
   }
 }
+$(document).ready(function() {
+            $(window).scroll(function() {
+                let scrollPos = $(this).scrollTop();
+                $('#scrolling-image').css('left', scrollPos + 'px');
+            });
+        });
 
 
 
