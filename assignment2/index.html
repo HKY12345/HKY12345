@@ -8,42 +8,86 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@3.0.0/hint.min.css" />
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Add your CSS library links here -->
     <!-- Add your JavaScript library links here -->
 </head>
 <body>
     <section id="image-movement">
         <h2>Section 1: Image Movement</h2>
-        <div class="image-container">
-            <img id="moving-image" src="media/Firefly cute cartoon image of a cat flying 24125.jpg" alt="Moving Image">
-            <div class="buttons">
                 <button id="move-up">Up</button>
                 <button id="move-down">Down</button>
                 <button id="move-left">Left</button>
                 <button id="move-right">Right</button>
-            </div>
-        </div>
+              
+                <img id='moving-image' src="media/Firefly cute cartoon image of a cat flying 24125.jpg" alt="Moving Image">
+           
+        
     </section>
-
+    <div class="container">
     <section id="interactive-trivia">
         <h2>Section 2: Interactive Trivia Question</h2>
         <!-- Add your trivia question and answer buttons here -->
+    <div id="question">
+      <p>How many legs does a spider have?</p>
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="checkAnswer('Eight')">A) Eight</button>
+        <button class="btn btn-primary" onclick="checkAnswer('Seven')">B) Seven</button>
+        <button class="btn btn-primary" onclick="checkAnswer('Five')">C) Five</button>
+      </div>
+      <p id="result"></p>
     </section>
 
     <section id="scroll-activated-image">
-        <h2>Section 3: Scroll-Activated Image Movement</h2>
-        <!-- Add your scroll-activated image here -->
-    </section>
-
+        
+    <!-- Section4  -->
+    <div class="container">
     <section id="choose-your-own-adventure">
         <h2>Section 4: Choose-Your-Own-Adventure</h2>
         <!-- This is your creative space! -->
     </section>
-    <script>
-    $(document).ready(function() {
+    </div>
+</div>
+
+    <script> 
+    $(document).ready(function(){
+      // Function to move the div up
+      $('#move-up').on('click',function(){
+        $('#moving-image').css("top", parseInt($('#moving-image').css('top'))-30 + 'px')
+      
+      });
+
+      // Function to move the div down
+      $("#move-down").on('click',function(){
+        $('#moving-image').css("top", parseInt($('#moving-image').css('top'))+30 + 'px');
+      });
+
+      // Function to move the div left
+      $("#move-left").on('click',function(){
+        $('#moving-image').css("left", parseInt($('#moving-image').css('left'))-30 + 'px');
+      });
+
+      // Function to move the div right
+      $("#move-right").on('click',function(){
+        $('#moving-image').css("left", parseInt($('#moving-image').css('left'))+30 + 'px');
+      });
     });
+
+    function checkAnswer(answer) {
+  if (answer === "Eight") {
+    document.getElementById("result").innerHTML = "Correct!";
+    document.getElementById("result").classList.add("correct");
+  } else {
+    document.getElementById("result").innerHTML = "Try again!";
+    document.getElementById("result").classList.remove("correct");
+  }
+}
+
+
+
+    </script> 
        
-    </script>
+  
 
     <!-- Remember to add your JavaScript file link here if you create one -->
 </body>

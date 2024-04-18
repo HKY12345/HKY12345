@@ -33,7 +33,7 @@ h2 {
   
   #moving-image {
     max-width: 400px;
-    transition: transform 0.3s ease;
+   
   }
   
   .buttons {
@@ -48,4 +48,19 @@ h2 {
     padding: 10px 20px;
     font-size: 16px;
   }
+  img{
+    position: absolute;
+  }
+  .container{
+    margin-top: 500px;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  
+
 /* Add specific styles for your sections, images, buttons, etc., here */
