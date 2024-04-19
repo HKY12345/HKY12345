@@ -68,7 +68,9 @@ h2 {
 #scrolling-image{
   max-width:400px;
   margin-top:50px;
+ 
 }
+
 #container2 {
   display: flex;
   justify-content: center;

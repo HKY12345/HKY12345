@@ -101,6 +101,7 @@
               $(window).scroll(function() {
                   let scrollPos = $(this).scrollTop();
                   let movement = scrollPos / 20;
+                  let offset = 50;
                   $('#scrolling-image').css('right', scrollPos + 'px');
               });
           });
