@@ -1,0 +1,16 @@
+.img-fluid{
+    padding-left: 50px;
+    padding-top: 160px;
+}
+body{
+    background-position: no-repeat;
+}
+
+
+@media
+    (max-width: 991px){
+        .sidebar{
+            background-color: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+        }
+    }
