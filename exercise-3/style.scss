@@ -1,44 +1,44 @@
 @mixin msg($col: orange) {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: $col;
-    font-size: 1rem;
-    color: white;
-    padding: 1rem 1.25rem;
-    margin: 1em 0;
-    display: inline-block;
-    cursor: pointer;
-   
-  }
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: $col;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1.25rem;
+  margin: 1em 0;
+  display: inline-block;
+  cursor: pointer;
 
-  
-  .msg h1 {
+ 
+
+  h1 {
     margin: 0 0 0.2em 0;
   }
-  
-  .msg {
-    @include msg;
-    &-info {
-      background: green;
-      &:hover {
-        background: grey;
-      }
+}
+.msg {
+  @include msg;
+    &:hover {
+      background: blue;
     }
   }
-  
-  .msg-warning {
-    background-color: yellow;
-    color: black;
-    &-hover {
-      background: yellow;
+
+
+.msg {
+  @include msg;
+  &-info {
+    background: green;
+    &:hover {
+      background: grey;
     }
   }
-  
-  .msg-danger {
-    background-color: red;
-    color: black;
-    &-hover{
-        background: red;
-    }
-  }
-  
+}
+
+.msg-warning {
+  background-color: yellow;
+  color: black;
+}
+
+.msg-danger {
+  background-color: red;
+  color: black;
+}
